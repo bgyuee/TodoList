@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>객체 spread 연산자</title>
+<script>
+  const obj1 = {
+    a: 1, //key : value
+    b: 2
+  }
+  const obj2 = {
+    c: 3
+  }
+  console.log({...obj1, ...obj2});
+  const obj3 = {...obj1, b: 'b'}
+  console.log(obj3);
+
+  const copiedObj = {...obj1}
+  console.log(copiedObj);
+</script>
+</head>
+<body>
+  
+</body>
+</html>
