@@ -4,6 +4,8 @@ import './App.css';
 import TodoInsert from './components/TodoInsert';
 import TodoList from './components/TodoList';
 import TodoTemplate from './components/TodoTemplate';
+import Counter from './hooks/Counter';
+import Average from './hooks/Average';
 
 function App() {
   const [todos, setTodos] = useState([
@@ -61,6 +63,8 @@ function App() {
       <TodoList todos={todos} onToggle={onToggle} onRemove={onRemove} />
     </TodoTemplate>
     <Info />
+    <Counter />
+    <Average />
     </>
   );
 }
